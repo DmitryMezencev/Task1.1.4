@@ -15,6 +15,8 @@ public class Util {
     private Util() {
     }
 
+    public static Connection connection = Util.conect();
+
     public static Connection conect() {
         try {
             return DriverManager.getConnection(URL, USERNAME, PASSWORD);
